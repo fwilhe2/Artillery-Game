@@ -25,6 +25,7 @@ kotlin {
                     useChromeHeadless()
                 }
             }
+            binaries.executable()
         }
     }
     val hostOs = System.getProperty("os.name")
