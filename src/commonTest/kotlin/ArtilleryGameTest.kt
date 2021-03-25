@@ -17,7 +17,7 @@ class ArtilleryGameTest {
             println(g)
         }while (g.gameContinues())
 
-        assertTrue(g.canon1.hitpoints < 0 || g.canon2.hitpoints < 0)
+        assertTrue(g.canon1.hitpoints <= 0 || g.canon2.hitpoints <= 0)
     }
 
 }
