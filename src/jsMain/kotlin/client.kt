@@ -1,5 +1,7 @@
 import kotlinx.browser.*
 import kotlinx.dom.appendText
+import me.florian.artillerygamelib.GameWorld
+import me.florian.artillerygamelib.performPlayerMove
 
 fun main() {
     val g = GameWorld()

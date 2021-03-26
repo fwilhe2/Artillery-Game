@@ -1,3 +1,5 @@
+package me.florian.artillerygamelib
+
 import kotlin.random.Random
 
 fun performPlayerMove(gameWorld: GameWorld) {
