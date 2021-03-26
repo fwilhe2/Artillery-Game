@@ -1,4 +1,9 @@
-import kotlin.test.*
+import me.florian.artillerygamelib.Canon
+import me.florian.artillerygamelib.GameWorld
+import me.florian.artillerygamelib.performPlayerMove
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class ArtilleryGameTest {
     @Test
@@ -15,7 +20,7 @@ class ArtilleryGameTest {
         do {
             performPlayerMove(g)
             println(g)
-        }while (g.gameContinues())
+        } while (g.gameContinues())
 
         assertTrue(g.canon1.hitpoints <= 0 || g.canon2.hitpoints <= 0)
     }
